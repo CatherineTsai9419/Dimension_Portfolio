@@ -144,11 +144,9 @@ body::-webkit-scrollbar {
 }
 
 .part_font_h2{
-  font-size: 1.2vw;
   font-weight: 400;
 }
 .part_font_h3{
-  font-size: 1.2vw;
   font-weight: 200;
   margin-top: 7vh;
   line-height: 3.5vh;
@@ -419,6 +417,9 @@ ul.a {
 .b_logo{
   width: 30%;
 }
+.intro_3{
+  display: none;
+}
 }
 
 /*手機瀏覽器*/
@@ -505,5 +506,8 @@ ul.a {
   }
   .b_logo{
     width: 60%;
+  }
+  .intro_3{
+    display: none;
   }
 }
