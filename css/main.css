@@ -311,6 +311,7 @@ html,body {
         height: 75%;
     }
     .pt input{
+        display: none;
         bottom: 3%;
         width: 5%;
     }
