@@ -52,7 +52,7 @@
         <div class="pt animate__animated animate__zoomIn" id="pt">
             <p class="Font_Montserrat name " id="name">Catherine Tsai</p>
             <img src="./img/portfolio_title.png" class="portfolio_title " id="portfolio_title">
-            <input type="image" src="./img/next_page.png"  id="title_next_btn"/>
+            <input onclick="chagenext()" type="image" src="./img/next_page.png"  id="title_next_btn"/>
         </div>
         <!--首頁碎塊-->
         <img src="./img/block01.png" class="block01" id="block01">
@@ -107,7 +107,7 @@
                 }
             }
             if(mobile()){
-                //block01                            
+        //block01                            
         const block01 = document.getElementById("block01");
         var Bwidth=40;
         var Bopacity=100;
@@ -137,6 +137,25 @@
         var Bopacity05=100;
         var Bbottom05=0;
         var Bright05=0;
+        //input button
+
+        function chagenext() {
+            block01.style.display="none";
+            block02.style.display="none";
+            block03.style.display="none";
+            block04.style.display="none";
+            block05.style.display="none";
+            portfolio_title.classList.remove("animate__zoomIn");
+            portfolio_title.classList.add("animate__fadeOut");
+            self_picture.style.display="block";
+            self_picture.classList.remove("animate__fadeOut");
+            self_picture.classList.add("animate__flipInY");
+            f_container.style.display="flex";
+            f_container.classList.remove("animate__fadeOut");
+            f_container.classList.add("animate__flipInX");
+            pt.style.display="none";
+
+        }
 
         
         $("#container").on("touchstart", function(e) {
