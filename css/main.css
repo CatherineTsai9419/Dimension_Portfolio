@@ -31,19 +31,19 @@
     transform: translateZ(0);
 }
 .block01{
-    width: 40%;opacity: 100%;position: fixed;left: 0px;top: 0px;display: block;transform: translateZ(0);
+    width: 40%;opacity: 100%;position: fixed;left: 0px;top: 0px;display: block;
 }
 .block02{
-    width: 40%;opacity: 100%;position: fixed;top:0px;display: block;left: 27%;transform: translateZ(0);
+    width: 40%;opacity: 100%;position: fixed;top:0px;display: block;left: 27%;
 }
 .block03{
-    width: 40%;position:fixed;right: 0;top: 0px;display: block;transform: translateZ(0);
+    width: 40%;position:fixed;right: 0;top: 0px;display: block;
 }
 .block04{
-    width: 65%;position:fixed;left: 0;bottom: 0;display: block;transform: translateZ(0);
+    width: 65%;position:fixed;left: 0;bottom: 0;display: block;
 }
 .block05{
-    width: 45%;position:fixed;right: 0;bottom: 0;display: block;transform: translateZ(0);
+    width: 45%;position:fixed;right: 0;bottom: 0;display: block;
 }
 
 .portfolio_title{
