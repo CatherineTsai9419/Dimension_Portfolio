@@ -28,6 +28,7 @@
 .m_container{
     background-color: black; 
     overflow: hidden;
+    transform: translateZ(0);
 }
 .block01{
     width: 40%;opacity: 100%;position: fixed;left: 0px;top: 0px;display: block;
