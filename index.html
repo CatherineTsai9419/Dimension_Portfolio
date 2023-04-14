@@ -52,7 +52,10 @@
         <div class="pt animate__animated animate__zoomIn" id="pt">
             <p class="Font_Montserrat name " id="name">Catherine Tsai</p>
             <img src="./img/portfolio_title.png" class="portfolio_title " id="portfolio_title">
+            <p class="next_hint floating">click here!</p>
             <input onclick="chagenext()" type="image" src="./img/next_page.png"  id="title_next_btn"/>
+
+           
         </div>
         <!--首頁碎塊-->
         <img src="./img/block01.png" class="block01" id="block01">
@@ -98,15 +101,6 @@
         //偵測到block display變成none，就讓title置入淡出動畫，讓下一層物件出現
         var portfolio_title = document.getElementById("pt");
         const container=document.getElementById("container");
-        function mobile(){
-            try{
-                document.createEvent("TouchEvent");
-                return true;
-                } catch(e) {
-                return false;
-                }
-            }
-            if(mobile()){
         //block01                            
         const block01 = document.getElementById("block01");
         var Bwidth=40;
@@ -137,8 +131,8 @@
         var Bopacity05=100;
         var Bbottom05=0;
         var Bright05=0;
-        //input button
 
+        //input button
         function chagenext() {
             block01.style.display="none";
             block02.style.display="none";
@@ -157,59 +151,31 @@
 
         };
 
-                }
-            else{
-                //block01                            
-        const block01 = document.getElementById("block01");
-        var Bwidth=40;
-        var Bopacity=100;
-        var Bleft=0;
-        var Btop=0;
+        //block01                            
         block01.style.width = Bwidth+"%";
         block01.style.opacity=Bopacity+"%";
         block01.style.left=Bleft;
         block01.style.top=Btop;
 
         //block02
-        const block02 = document.getElementById("block02");
-
-        var Bwidth02=40;
-        var Bopacity02=100;
-        var Btop02=0;
-        var Bleft02=27;
         block02.style.width = Bwidth02+"%";
         block02.style.opacity=Bopacity02+"%";
         block02.style.top=Btop02;
         block02.style.left=Bleft02+"%";
 
         //block03
-        const block03 = document.getElementById("block03");
-        var Bwidth03=40;
-        var Bopacity03=100;
-        var Btop03=0;
-        var Bright03=0;
         block03.style.width = Bwidth03+"%";
         block03.style.opacity=Bopacity03+"%";
         block03.style.top=Btop03;
         block03.style.right=Bright03+"%";
 
         //block04
-        const block04 = document.getElementById("block04");
-        var Bwidth04=65;
-        var Bopacity04=100;
-        var Bbottom04=0;
-        var Bleft04=0;
         block04.style.width = Bwidth04+"%";
         block04.style.opacity=Bopacity04+"%";
         block04.style.bottom=Bbottom04;
         block04.style.left=Bleft04+"%";
 
         //block05
-        const block05 = document.getElementById("block05");
-        var Bwidth05=45;
-        var Bopacity05=100;
-        var Bbottom05=0;
-        var Bright05=0;
         block05.style.width = Bwidth05+"%";
         block05.style.opacity=Bopacity05+"%";
         block05.style.bottom=Bbottom05;
@@ -327,8 +293,7 @@
                 };
 
             }
-        }
-            };
+        };
         
        
         
